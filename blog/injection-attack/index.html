@@ -15,6 +15,37 @@ header.topbar .topbar__inner{
 font-size: 20px !important;
 font-weight: 500 !important;
 }
+
+/* 1️⃣ 預設選單文字 */
+.navbar .navbar__menu > li > a,
+.navbar .navbar__menu > li > span {
+    color: #333 !important;
+    background: transparent !important;
+}
+
+/* 2️⃣ 移除 active overlay */
+.navbar .navbar__menu > li.active > a,
+.navbar .navbar__menu > li.active > span,
+.navbar .navbar__menu > li.active-parent > a {
+    background: transparent !important;
+}
+
+/* 3️⃣ 滑過效果 */
+.navbar .navbar__menu > li > a:hover,
+.navbar .navbar__menu > li > span:hover {
+    color: #2c7be5 !important;
+}
+
+/* 4️⃣ 目前頁面 active */
+.navbar .navbar__menu > li.active > a {
+    color: #2c7be5 !important;
+}
+
+/* 5️⃣ submenu hover */
+.navbar .navbar__menu > li.has-submenu:hover > a {
+    color: #2c7be5 !important;
+}
+
     
 /* header 改為上下排列 */
 .topbar__inner {
