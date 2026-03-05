@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
     <title>vscan-simple</title>
-    <link href="https://may95429.github.io/vscan/feed.xml" rel="self" />
-    <link href="https://may95429.github.io/vscan" />
+    <link href="https://may95429.github.io/VSCAN1/feed.xml" rel="self" />
+    <link href="https://may95429.github.io/VSCAN1" />
     <updated>2026-03-04T18:30:42+08:00</updated>
     <author>
         <name>vscan</name>
     </author>
-    <id>https://may95429.github.io/vscan</id>
+    <id>https://may95429.github.io/VSCAN1</id>
 
     <entry>
         <title>CSRF (Cross-Site Request Forgery)</title>
         <author>
             <name>vscan</name>
         </author>
-        <link href="https://may95429.github.io/vscan/blog/csrf-cross-site-request-forgery/"/>
-        <id>https://may95429.github.io/vscan/blog/csrf-cross-site-request-forgery/</id>
+        <link href="https://may95429.github.io/VSCAN1/blog/csrf-cross-site-request-forgery/"/>
+        <id>https://may95429.github.io/VSCAN1/blog/csrf-cross-site-request-forgery/</id>
 
         <updated>2018-05-03T18:03:47+08:00</updated>
             <summary type="html">
@@ -26,7 +26,7 @@
         <content type="html">
             <![CDATA[
                 <p>CSRF 為一種類似詐騙的手法，藉由偽造的第三方網站內容誘騙受害者連線，該受害者需已透過身分驗證拿到目標網站的 Session，導致在不知情狀況下，受害者開啟了偽造網站後觸發了對目標網站以受害者身分的連線要求。  </p>
-<p>該弱點導致攻擊者劫持受害者的 Session，等於攻擊者拿到了受害者的身分，並在不知情狀況下被操作未知行為，可能造成受害者的機敏資料洩漏或交易行為變更等後果。此攻擊行為與 <a href="http://vscan.local/blog/cross-site-scripting/" target="_blank" rel="noopener">XSS</a> 不同的地方在於未利用 Script 取得受害者機密資訊，而是直接利用受害者發出的連線進行操作，因此除了 Cookie 的保護外，也必須對機敏內容的連線做二次驗證，採用不信任的方式檢查。   <figure class="post__image post__image--center size-full wp-image-2483"><img loading="lazy"  src="https://may95429.github.io/vscan/media/posts/5/csrf.jpg" alt="CSRF" width="592" height="309" sizes="(max-width: 1920px) 100vw, 1920px" srcset="https://may95429.github.io/vscan/media/posts/5/responsive/csrf-xs.jpg 640w ,https://may95429.github.io/vscan/media/posts/5/responsive/csrf-sm.jpg 768w ,https://may95429.github.io/vscan/media/posts/5/responsive/csrf-md.jpg 1024w ,https://may95429.github.io/vscan/media/posts/5/responsive/csrf-lg.jpg 1366w ,https://may95429.github.io/vscan/media/posts/5/responsive/csrf-xl.jpg 1600w ,https://may95429.github.io/vscan/media/posts/5/responsive/csrf-2xl.jpg 1920w"></figure>
+<p>該弱點導致攻擊者劫持受害者的 Session，等於攻擊者拿到了受害者的身分，並在不知情狀況下被操作未知行為，可能造成受害者的機敏資料洩漏或交易行為變更等後果。此攻擊行為與 <a href="http://vscan.local/blog/cross-site-scripting/" target="_blank" rel="noopener">XSS</a> 不同的地方在於未利用 Script 取得受害者機密資訊，而是直接利用受害者發出的連線進行操作，因此除了 Cookie 的保護外，也必須對機敏內容的連線做二次驗證，採用不信任的方式檢查。   <figure class="post__image post__image--center size-full wp-image-2483"><img loading="lazy"  src="https://may95429.github.io/VSCAN1/media/posts/5/csrf.jpg" alt="CSRF" width="592" height="309" sizes="(max-width: 1920px) 100vw, 1920px" srcset="https://may95429.github.io/VSCAN1/media/posts/5/responsive/csrf-xs.jpg 640w ,https://may95429.github.io/VSCAN1/media/posts/5/responsive/csrf-sm.jpg 768w ,https://may95429.github.io/VSCAN1/media/posts/5/responsive/csrf-md.jpg 1024w ,https://may95429.github.io/VSCAN1/media/posts/5/responsive/csrf-lg.jpg 1366w ,https://may95429.github.io/VSCAN1/media/posts/5/responsive/csrf-xl.jpg 1600w ,https://may95429.github.io/VSCAN1/media/posts/5/responsive/csrf-2xl.jpg 1920w"></figure>
 <p>Cross-Site Request Forgery   驗證的方向需能檢驗送出連線的使用者身分，以避免受害者在不知情狀況下被冒用身分，可參考方法如下，</p>
 <ul>
 <li>
@@ -56,8 +56,8 @@
         <author>
             <name>vscan</name>
         </author>
-        <link href="https://may95429.github.io/vscan/blog/cross-site-scripting/"/>
-        <id>https://may95429.github.io/vscan/blog/cross-site-scripting/</id>
+        <link href="https://may95429.github.io/VSCAN1/blog/cross-site-scripting/"/>
+        <id>https://may95429.github.io/VSCAN1/blog/cross-site-scripting/</id>
 
         <updated>2018-02-28T22:40:16+08:00</updated>
             <summary type="html">
@@ -77,7 +77,7 @@
 <p><a href="https://capec.mitre.org/data/definitions/592.html" target="_blank" rel="noopener noreferrer">Stored XSS</a> 則為利用類似留言板等網站功能，將外部輸入的惡意語法直接儲存在資料庫，當每個用戶存取到該頁面時，都會讀取到該惡意行為而被攻擊，受害者的層面更為廣大。</p>
 </li>
 </ul>
-<figure class="post__image post__image--center size-full wp-image-2472">  <img loading="lazy"  src="https://may95429.github.io/vscan/media/posts/4/RXSS.gif" alt="" width="580" height="389"></figure>
+<figure class="post__image post__image--center size-full wp-image-2472">  <img loading="lazy"  src="https://may95429.github.io/VSCAN1/media/posts/4/RXSS.gif" alt="" width="580" height="389"></figure>
 <p>Reflected XSS   由此可知，XSS 的攻擊面向很多樣化，就算針對特殊符號阻擋，還是可能利用編碼或其他格式來構成script 語法，只要想辦法避開檢驗規則即可，而不像 <a href="http://vscan.local/blog/sql-injection/" target="_blank" rel="noopener">SQL injection</a> 只能符合 SQL 的語法，相對於HTML 格式嚴謹許多。就如從外部輸入 onmouseover=alert(document.cookie) ，其中沒使用到&lt; &gt;等跳脫字元，但瀏覽器認定為合法的HTML事件而被執行，再加上可編成其他格式來逃避驗證規則，難怪此弱點仍然是眾多駭客攻打網站的首選。</p>
 <p>防禦方法可參考如 <a href="http://vscan.local/blog/http-header-security/" target="_blank" rel="noopener">HTTP Header</a> 安全性所述，對 Header 加入安全設定防止被竊取機密資訊，或 <a href="http://vscan.local/blog/injection-attack/" target="_blank" rel="noopener">Injection Attack</a> 的通用原則，對可竄改的外部來源做過濾驗證，有幾項原則可參考：</p>
 <ul>
@@ -114,8 +114,8 @@
         <author>
             <name>vscan</name>
         </author>
-        <link href="https://may95429.github.io/vscan/blog/sql-injection/"/>
-        <id>https://may95429.github.io/vscan/blog/sql-injection/</id>
+        <link href="https://may95429.github.io/VSCAN1/blog/sql-injection/"/>
+        <id>https://may95429.github.io/VSCAN1/blog/sql-injection/</id>
 
         <updated>2017-11-15T21:37:38+08:00</updated>
             <summary type="html">
@@ -142,7 +142,7 @@
 <p><strong style="font-size: inherit;">替代字元</strong><span style="font-size: inherit;"> <br></span><span style="font-size: inherit;">使用 Replace() 等方法來將特定字元做替換，但可能攻擊字元稍微經過變化或加密後，變成誤擋或漏檔等結果。</span></p>
 <p><span style="font-size: inherit;"> </span><em style="font-size: inherit;">string sql = "SELECT * FROM WIDGETS WHERE ID=" +badValue.Replace("'","''");</em><span style="font-size: inherit;">   </span></p>
 <p><strong style="font-size: inherit;">正則表達式</strong><span style="font-size: inherit;"> <br>利用 Regular Expression 設定合法的格式，直接用白名單方式限定參數的內容，這就變成需根據資料的不同來調整對應的 Regex，雖然嚴謹但較為麻煩，但有可能產生誤擋或漏擋的情況發生。   </span></p>
-<p><span style="font-size: inherit;">以上幾種防範方法適用於 </span><a href="https://may95429.github.io/vscan/blog/injection-attack/">Injection attack</a><span style="font-size: inherit;"> 類型的攻擊行為，可針對外部不被信任的參數做驗證與過濾處理，避免產生不可預期的行為，可視資料的多樣性與參數用途來選擇相對應的防禦方式。</span></p>
+<p><span style="font-size: inherit;">以上幾種防範方法適用於 </span><a href="https://may95429.github.io/VSCAN1/blog/injection-attack/">Injection attack</a><span style="font-size: inherit;"> 類型的攻擊行為，可針對外部不被信任的參數做驗證與過濾處理，避免產生不可預期的行為，可視資料的多樣性與參數用途來選擇相對應的防禦方式。</span></p>
             ]]>
         </content>
     </entry>
@@ -151,8 +151,8 @@
         <author>
             <name>vscan</name>
         </author>
-        <link href="https://may95429.github.io/vscan/blog/injection-attack/"/>
-        <id>https://may95429.github.io/vscan/blog/injection-attack/</id>
+        <link href="https://may95429.github.io/VSCAN1/blog/injection-attack/"/>
+        <id>https://may95429.github.io/VSCAN1/blog/injection-attack/</id>
 
         <updated>2017-06-15T23:05:21+08:00</updated>
             <summary type="html">
@@ -165,8 +165,8 @@
                 <p>Injection Attack (注入式攻擊)為一種利用外部不被信任的輸入來源，未經驗證就被直接帶入後端處理，導致利用跳脫字元或編碼等方式造成攻擊字串被執行，進而發生無法預期行為，更由於其普遍性導致網路上有多種工具可協助進行攻擊，不需要高深技巧，可想而知其嚴重性！  </p>
 <p><strong>常見的 Injection attack</strong></p>
 <ul>
-<li><strong><a href="https://may95429.github.io/vscan/blog/sql-injection/" target="_blank" rel="noopener noreferrer"><span style="font-size: large;">SQL injection</span></a></strong></li>
-<li><a href="http://vscan.local/blog/cross-site-scripting/" target="_blank" rel="noopener"></a><strong><a href="https://may95429.github.io/vscan/blog/cross-site-scripting/">Cross-site Scripting (XSS)</a></strong></li>
+<li><strong><a href="https://may95429.github.io/VSCAN1/blog/sql-injection/" target="_blank" rel="noopener noreferrer"><span style="font-size: large;">SQL injection</span></a></strong></li>
+<li><a href="http://vscan.local/blog/cross-site-scripting/" target="_blank" rel="noopener"></a><strong><a href="https://may95429.github.io/VSCAN1/blog/cross-site-scripting/">Cross-site Scripting (XSS)</a></strong></li>
 <li><span style="font-size: medium;">CRLF injection/Host Header</span></li>
 <li><span style="font-size: medium;">Code injection/OS cmd</span></li>
 <li><span style="font-size: medium;">SMTP injeciton</span></li>
@@ -186,8 +186,8 @@
         <author>
             <name>vscan</name>
         </author>
-        <link href="https://may95429.github.io/vscan/blog/http-header-an-quan-xing/"/>
-        <id>https://may95429.github.io/vscan/blog/http-header-an-quan-xing/</id>
+        <link href="https://may95429.github.io/VSCAN1/blog/http-header-an-quan-xing/"/>
+        <id>https://may95429.github.io/VSCAN1/blog/http-header-an-quan-xing/</id>
 
         <updated>2017-03-30T22:20:12+08:00</updated>
             <summary type="html">
@@ -197,10 +197,10 @@
             </summary>
         <content type="html">
             <![CDATA[
-                <figure class="post__image wp-image-2340"><img loading="lazy"  title="HTTP Header" src="https://may95429.github.io/vscan/media/posts/1/擷取.png" alt="HTTP Header to Google" width="509" height="312" sizes="(max-width: 1920px) 100vw, 1920px" srcset="https://may95429.github.io/vscan/media/posts/1/responsive/擷取-xs.png 640w ,https://may95429.github.io/vscan/media/posts/1/responsive/擷取-sm.png 768w ,https://may95429.github.io/vscan/media/posts/1/responsive/擷取-md.png 1024w ,https://may95429.github.io/vscan/media/posts/1/responsive/擷取-lg.png 1366w ,https://may95429.github.io/vscan/media/posts/1/responsive/擷取-xl.png 1600w ,https://may95429.github.io/vscan/media/posts/1/responsive/擷取-2xl.png 1920w"></figure>
+                <figure class="post__image wp-image-2340"><img loading="lazy"  title="HTTP Header" src="https://may95429.github.io/VSCAN1/media/posts/1/擷取.png" alt="HTTP Header to Google" width="509" height="312" sizes="(max-width: 1920px) 100vw, 1920px" srcset="https://may95429.github.io/VSCAN1/media/posts/1/responsive/擷取-xs.png 640w ,https://may95429.github.io/VSCAN1/media/posts/1/responsive/擷取-sm.png 768w ,https://may95429.github.io/VSCAN1/media/posts/1/responsive/擷取-md.png 1024w ,https://may95429.github.io/VSCAN1/media/posts/1/responsive/擷取-lg.png 1366w ,https://may95429.github.io/VSCAN1/media/posts/1/responsive/擷取-xl.png 1600w ,https://may95429.github.io/VSCAN1/media/posts/1/responsive/擷取-2xl.png 1920w"></figure>
 <p>HTTP Header 範例  </p>
 <p>HTTP Header 可視為網站與客戶在連線時的橋溝通梁，也就是遵照 HTTP 的協議，利用 Server 端的參數來告知客戶端瀏覽器需遵守其遊戲規則，你才能跟我進行連線溝通與確認是否繼續進行下一步動作，所以當客戶端發出需求時，Server 端可藉由回應來確認連線的安全性需求。</p>
-<p>近來跟客戶討論網站安全性時，常會遇到程式碼修補上的困難，不外乎還需要開發人員的調整及測試時間等問題，其實可以先進行 HTTP Header 的安全性設定。 就如 OWASP TOP 10 與 SANS/CWE TOP 25 所列弱點，常見的 <a href="https://may95429.github.io/vscan/blog/cross-site-scripting/" target="_blank" rel="noopener noreferrer">XSS(Cross-Site Scripting)</a>與 CSRF(Cross-Site Requset Forgery)等弱點都可藉由調整 HTTP Header 來達成初步的防禦效果! OWASP 就有針對此發表了相關說明。</p>
+<p>近來跟客戶討論網站安全性時，常會遇到程式碼修補上的困難，不外乎還需要開發人員的調整及測試時間等問題，其實可以先進行 HTTP Header 的安全性設定。 就如 OWASP TOP 10 與 SANS/CWE TOP 25 所列弱點，常見的 <a href="https://may95429.github.io/VSCAN1/blog/cross-site-scripting/" target="_blank" rel="noopener noreferrer">XSS(Cross-Site Scripting)</a>與 CSRF(Cross-Site Requset Forgery)等弱點都可藉由調整 HTTP Header 來達成初步的防禦效果! OWASP 就有針對此發表了相關說明。</p>
 <p><strong>HTTP Header 安全設定</strong></p>
 <ul>
 <li style="font-weight: 400; text-align: left;"><a href="https://www.owasp.org/index.php/OWASP_Secure_Headers_Project#hsts_bp" target="_blank" rel="noopener"><span style="fontfont-weight: 400; font-size: medium;">HTTP Strict Transport Security (HSTS)</span></a></li>
