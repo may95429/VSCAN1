@@ -15,7 +15,7 @@
 
 	<meta property="og:title" content="HTTP Header 安全性"><meta property="og:image" content="https://may95429.github.io/VSCAN1/media/website/v-scan-01-2.png"><meta property="og:image:width" content="137"><meta property="og:image:height" content="49"><meta property="og:site_name" content="VSCAN1"><meta property="og:description" content="HTTP Header 範例 HTTP Header 可視為網站與客戶在連線時的橋溝通梁，也就是遵照 HTTP 的協議，利用 Server 端的參數來告知客戶端瀏覽器需遵守其遊戲規則，你才能跟我進行連線溝通與確認是否繼續進行下一步動作，所以當客戶端發出需求時，Server&hellip;"><meta property="og:url" content="https://may95429.github.io/VSCAN1/blog/http-header-an-quan-xing/"><meta property="og:type" content="article">
    
-   <link rel="stylesheet" href="https://may95429.github.io/VSCAN1/assets/css/style.css?v=655fe505bdb7922c49f169886d4891bc">	
+   <link rel="stylesheet" href="https://may95429.github.io/VSCAN1/assets/css/style.css?v=3f1234dd1c4ddb505a53f55c31d441cf">	
 	<script type="application/ld+json">{"@context":"http://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"https://may95429.github.io/VSCAN1/blog/http-header-an-quan-xing/"},"headline":"HTTP Header 安全性","datePublished":"2017-03-30T22:20+08:00","dateModified":"2026-03-04T18:30+08:00","image":{"@type":"ImageObject","url":"https://may95429.github.io/VSCAN1/media/website/v-scan-01-2.png","height":49,"width":137},"description":"HTTP Header 範例 HTTP Header 可視為網站與客戶在連線時的橋溝通梁，也就是遵照 HTTP 的協議，利用 Server 端的參數來告知客戶端瀏覽器需遵守其遊戲規則，你才能跟我進行連線溝通與確認是否繼續進行下一步動作，所以當客戶端發出需求時，Server&hellip;","author":{"@type":"Person","name":"vscan","url":"https://may95429.github.io/VSCAN1/authors/vscan/"},"publisher":{"@type":"Organization","name":"vscan","logo":{"@type":"ImageObject","url":"https://may95429.github.io/VSCAN1/media/website/v-scan-01-2.png","height":49,"width":137}}}</script>	
 	<style>.u-tag--cross-site-scripting{--badge-bg:#84888E;--badge-txt:#FFFFFF;}.u-tag--csrf{--badge-bg:#84888E;--badge-txt:#FFFFFF;}.u-tag--http-header{--badge-bg:#84888E;--badge-txt:#FFFFFF;}.u-tag--injection{--badge-bg:#84888E;--badge-txt:#FFFFFF;}.u-tag--sql-injection{--badge-bg:#84888E;--badge-txt:#FFFFFF;}</style>
 	<noscript>
@@ -288,6 +288,7 @@ body.post-template{
   .vscan-form-wrapper {
     text-align: left !important;
     margin-bottom: 50px !important; /* 調整表單區的下邊距 */
+    z-index: 2 !important; /* 確保表單區域不會被遮擋 */
   }
 
   /* 表單上方導引文字 (粗體+黑色) */
