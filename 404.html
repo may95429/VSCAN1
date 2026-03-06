@@ -111,11 +111,16 @@ body.page-template .main-content,
 body.post-template .main-content{
   grid-template-columns: 1fr !important;
   grid-column-gap: 0 !important;
+  max-width: 90% !important; /* 減少左右邊距 */
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
 }
 
 /* 3) Page / Post：主內容強制吃滿整列（覆蓋 theme 在大螢幕時給的 grid-column: 2/3） */
-body.page-template .main,
-body.post-template .main{
+body.page-template main,
+body.post-template main{
   grid-column: 1 / -1 !important;
   max-width: 100% !important;
   margin: 0 auto !important;
